@@ -118,6 +118,11 @@
         [_textView setScrollEnabled:NO];
         [_textView setFont:[UIFont fontWithName:[NSString stringWithFormat:@"%@Neue", FONT_BASENAME] size:18.0]];
         
+        // Bugfixing
+//        _textView.contentInset = UIEdgeInsetsZero;
+        [_textView setTextContainerInset:UIEdgeInsetsZero];
+//        [_textView.textContainer setLineFragmentPadding:0];
+        
         queueView = [[UIImageView alloc] init];
         
         [textContainerView addSubview:_textView];
@@ -147,7 +152,7 @@
                                            constraintsWithVisualFormat:@"H:|-(2)-[_textView]-(2)-|"
                                            options:0 metrics:0 views:viewsDic]];
         [textContainerView addConstraints:[NSLayoutConstraint
-                                           constraintsWithVisualFormat:@"V:|[_textView]|"
+                                           constraintsWithVisualFormat:@"V:|-(2)-[_textView]-(2)-|"
                                            options:0 metrics:0 views:viewsDic]];
         
         if (_textViewHorizConstraints != nil) {

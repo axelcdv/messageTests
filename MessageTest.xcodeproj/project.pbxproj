@@ -31,6 +31,7 @@
 		149C580C17FCB46D00E1B298 /* queue-gauche@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 149C580517FCB46D00E1B298 /* queue-gauche@2x.png */; };
 		149C580D17FCB46D00E1B298 /* queue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 149C580617FCB46D00E1B298 /* queue@2x.png */; };
 		149C580E17FCB46D00E1B298 /* queue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 149C580617FCB46D00E1B298 /* queue@2x.png */; };
+		149C581217FD70D700E1B298 /* THSpringyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 149C581117FD70D700E1B298 /* THSpringyFlowLayout.m */; };
 		863EC8B61C154C68918BEBE9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4B7F5F5ABC495FAD8E473E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		149C580417FCB46D00E1B298 /* queue-gauche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "queue-gauche.png"; sourceTree = "<group>"; };
 		149C580517FCB46D00E1B298 /* queue-gauche@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "queue-gauche@2x.png"; sourceTree = "<group>"; };
 		149C580617FCB46D00E1B298 /* queue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "queue@2x.png"; sourceTree = "<group>"; };
+		149C581017FD70D700E1B298 /* THSpringyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSpringyFlowLayout.h; sourceTree = "<group>"; };
+		149C581117FD70D700E1B298 /* THSpringyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSpringyFlowLayout.m; sourceTree = "<group>"; };
 		5E4B7F5F5ABC495FAD8E473E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A346C2C1554F9C8348900E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +142,8 @@
 				149C57F317FCAD0500E1B298 /* Message.h */,
 				149C57F417FCAD0500E1B298 /* Message.m */,
 				149C57F017FCABF100E1B298 /* MessageCell.h */,
+				149C581017FD70D700E1B298 /* THSpringyFlowLayout.h */,
+				149C581117FD70D700E1B298 /* THSpringyFlowLayout.m */,
 				149C57F117FCABF100E1B298 /* MessageCell.m */,
 				149C57C517FCA90100E1B298 /* AppDelegate.h */,
 				149C57C617FCA90100E1B298 /* AppDelegate.m */,
@@ -337,6 +342,7 @@
 				149C57C317FCA90100E1B298 /* main.m in Sources */,
 				149C57C717FCA90100E1B298 /* AppDelegate.m in Sources */,
 				149C57F217FCABF100E1B298 /* MessageCell.m in Sources */,
+				149C581217FD70D700E1B298 /* THSpringyFlowLayout.m in Sources */,
 				149C57EE17FCABD300E1B298 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

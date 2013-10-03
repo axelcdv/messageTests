@@ -33,6 +33,9 @@
             [_messagesArray addObject:[Message messageWithUsername:@"Bob" andText:@"hello this is a text"]];
             [_messagesArray addObject:[Message messageWithUsername:@"Bob" andText:@"hello this is a text"]];
             [_messagesArray addObject:[Message messageWithUsername:@"Bob" andText:@"hello this is a text"]];
+            [_messagesArray addObject:[Message messageWithUsername:@"Bob" andText:@"hello this is a huge text that will be\
+                                       on several lines but I don't known how many, blah blah blah\
+                                       and blah blah blah again"]];
         }
     }
     return self;
@@ -58,8 +61,6 @@
     // TODO
     Message *message = [_messagesArray objectAtIndex:indexPath.row];
     CGSize size = [MessageCell calculateTextSize:message.text];
-    
-    NSLog(@"Size for cell: %.2f, %.2f", size.width, size.height + [MessageCell extraHeight]);
     
     return CGSizeMake(320, size.height + [MessageCell extraHeight]);
 }
