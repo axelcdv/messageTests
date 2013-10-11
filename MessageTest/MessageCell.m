@@ -64,7 +64,8 @@
             [containerView removeConstraints:_queueViewConstraints];
         }
         
-        [queueView setImage:[UIImage imageNamed:@"queue"]];
+        [queueView setImage:[[UIImage imageNamed:@"queue"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
+        [queueView setTintColor:[UIColor greenColor]];
         
         [containerView addConstraints:[NSLayoutConstraint
                                        constraintsWithVisualFormat:@"V:|[queueView]"
@@ -87,7 +88,8 @@
             [containerView removeConstraints:_queueViewConstraints];
         }
         
-        [queueView setImage:[UIImage imageNamed:@"queue-gauche"]];
+        [queueView setImage:[[UIImage imageNamed:@"queue-gauche"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
+        [queueView setTintColor:[UIColor blueColor]];
         
         [containerView addConstraints:[NSLayoutConstraint
                                        constraintsWithVisualFormat:@"V:|[queueView]"
